@@ -40,7 +40,26 @@ We integrate large-scale mobility data with interpretable machine learning to ex
 
 - **Mobility Data:**  
   Weekly patterns data in Parquet format for each year (e.g., `/combined_GA_weekly_patterns_2019.parquet`).
-  The data description can be found at: https://docs.deweydata.io/docs/advan-research-weekly-patterns 
+  The data description can be found at: https://docs.deweydata.io/docs/advan-research-weekly-patterns
+  The data column headers are:
+  ['placekey', 'parent_placekey', 'safegraph_brand_ids', 'location_name',
+       'brands', 'store_id', 'top_category', 'sub_category', 'naics_code',
+       'latitude', 'longitude', 'street_address', 'city', 'region',
+       'postal_code', 'open_hours', 'category_tags', 'opened_on', 'closed_on',
+       'tracking_closed_since', 'websites', 'geometry_type', 'polygon_wkt',
+       'polygon_class', 'enclosed', 'phone_number', 'is_synthetic',
+       'includes_parking_lot', 'iso_country_code', 'wkt_area_sq_meters',
+       'date_range_start', 'date_range_end', 'raw_visit_counts',
+       'raw_visitor_counts', 'visits_by_day', 'visits_by_each_hour', 'poi_cbg',
+       'visitor_home_cbgs', 'visitor_home_aggregation', 'visitor_daytime_cbgs',
+       'visitor_country_of_origin', 'distance_from_home', 'median_dwell',
+       'bucketed_dwell_times', 'related_same_day_brand',
+       'related_same_week_brand', 'device_type',
+       'normalized_visits_by_state_scaling',
+       'normalized_visits_by_region_naics_visits',
+       'normalized_visits_by_region_naics_visitors',
+       'normalized_visits_by_total_visits',
+       'normalized_visits_by_total_visitors']
 - **Demographic Data:**  
   Yearly demographic CSVs in `dempgraphic_DCA/` (e.g., `dempgraphic_DCA/2019.csv`). The data is collected from the U.S. Census Bureau, American Community Survey 5-Year Estimates, 2019 - 2023.
   The example headers are:
