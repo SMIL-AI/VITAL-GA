@@ -26,6 +26,15 @@ We integrate large-scale mobility data with interpretable machine learning to ex
   - Loads demographic and geographic data for CBGs.
   - Calculates a distance-decay weighted accessibility score for each CBG.
   - Outputs results as CSV files (e.g., `2019_Adult Primary Care_access.csv`).
+- **catboost0727.py**  
+  Python script for advanced statistical and machine learning analysis of healthcare accessibility changes.
+  - Loads precomputed accessibility difference data and demographic features.
+  - Cleans and preprocesses the data, including log transformations and feature engineering (e.g., metro area indicator).
+  - Merges accessibility and demographic data for each CBG.
+  - For each healthcare category, fits a CatBoost regressor to model the log-percentage change in accessibility between 2020 and 2022.
+  - Performs hyperparameter tuning and evaluates model performance using R², MSE, RMSE, and MAE.
+  - Uses SHAP (SHapley Additive exPlanations) to interpret feature importance and visualize the drivers of accessibility change.
+  - Outputs summary statistics and saves SHAP plots for each category.
 
 ## Data Requirements
 
@@ -46,6 +55,8 @@ We integrate large-scale mobility data with interpretable machine learning to ex
 2. **Reproduce Analysis and Visualizations:**
    - Open `main.ipynb` in Jupyter.
    - Follow the notebook to load, analyze, and visualize accessibility changes.
+3. **Run Machine Learning Analysis:**
+ - Execute `catboost0727.py` to perform regression analysis and generate SHAP plots for feature interpretation.
 
 ## Dependencies
 
@@ -54,8 +65,11 @@ We integrate large-scale mobility data with interpretable machine learning to ex
 - geopandas
 - numpy
 - matplotlib
+- seaborn
 - catboost
 - shap
+- scikit-learn
+- scipy
 - (and other standard scientific Python libraries)
 
 Install dependencies with:
@@ -67,3 +81,4 @@ pip install pandas geopandas numpy matplotlib catboost shap
 
 - Accessibility CSVs for each year and healthcare category (e.g., `2019_Adult Primary Care_access.csv`).
 - Visualizations and model interpretation plots in the notebook.
+- SHAP summary and bar plots for each healthcare category (saved in the `shap_plots/` directory).
