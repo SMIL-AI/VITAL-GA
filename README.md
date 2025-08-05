@@ -43,6 +43,8 @@ We integrate large-scale mobility data with interpretable machine learning to ex
   The data description can be found at: https://docs.deweydata.io/docs/advan-research-weekly-patterns 
 - **Demographic Data:**  
   Yearly demographic CSVs in `dempgraphic_DCA/` (e.g., `dempgraphic_DCA/2019.csv`). The data is collected from the U.S. Census Bureau, American Community Survey 5-Year Estimates, 2019 - 2023.
+  The example headers are:
+![dem_header](pics/dem_header.png)
 - **Geographic Data:**  
   Shapefile for CBGs (e.g., `tl_2019_13_bg.shp`).
 
