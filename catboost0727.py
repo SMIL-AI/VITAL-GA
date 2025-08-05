@@ -16,7 +16,7 @@ import pandas as pd
 import numpy as np
 
 # read csv file
-df_y = pd.read_csv('/home/disk/hao/poi_v2_healthcare/weekly/accessibility/acess_cal_v2/covid/difference/covid_accessibility_differences_2020_2022.csv')
+df_y = pd.read_csv('/data/acess_cal_v2/covid/difference/covid_accessibility_differences_2020_2022.csv')
 
 # Filter out CBGs where accessibility_2020 is zero (to avoid division by zero)
 print(f"Original data shape: {df_y.shape}")
@@ -67,7 +67,7 @@ def add_metro_area_feature(df_x):
     Add metro_area feature to df_x based on CBG_ID and metropolitan counties
     """
     # Load metropolitan counties data
-    metro_counties = pd.read_csv('/home/disk/hao/poi_v2_healthcare/weekly/data/georgia_14_metropolitan_counties.csv', encoding='ISO-8859-1')
+    metro_counties = pd.read_csv('/data/georgia_14_metropolitan_counties.csv', encoding='ISO-8859-1')
     
     # Get the list of metropolitan county FIPS codes (first 5 digits of CBG_ID)
     metro_fips = set(metro_counties['County FIPS'].astype(str))
@@ -90,7 +90,7 @@ def add_metro_area_feature(df_x):
 import pandas as pd
 
 # read csv file
-df_x = pd.read_csv('/home/disk/hao/poi_v2_healthcare/weekly/data/19_23_demo_0725_new/2020_demo_june_data.csv')
+df_x = pd.read_csv('/data/19_23_demo_0725_new/2020_demo_june_data.csv')
 
 # rename_dict for column names
 rename_dict = {
