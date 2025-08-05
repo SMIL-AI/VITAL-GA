@@ -1,4 +1,4 @@
-# Healthcare Accessibility Analysis During COVID-19
+# Healthcare Accessibility Shifts Analysis During COVID-19 Using Mobility Data
 
 This repository contains code and notebooks for the study:
 
