@@ -40,10 +40,9 @@ We integrate large-scale mobility data with interpretable machine learning to ex
 
 - **Mobility Data:**  
   Weekly patterns data in Parquet format for each year (e.g., `/combined_GA_weekly_patterns_2019.parquet`).
-
+  The data description can be found at: https://docs.deweydata.io/docs/advan-research-weekly-patterns 
 - **Demographic Data:**  
-  Yearly demographic CSVs in `dempgraphic_DCA/` (e.g., `dempgraphic_DCA/2019.csv`).
-
+  Yearly demographic CSVs in `dempgraphic_DCA/` (e.g., `dempgraphic_DCA/2019.csv`). The data is collected from the U.S. Census Bureau, American Community Survey 5-Year Estimates, 2019 - 2023.
 - **Geographic Data:**  
   Shapefile for CBGs (e.g., `tl_2019_13_bg.shp`).
 
