@@ -65,7 +65,7 @@ We integrate large-scale mobility data with interpretable machine learning to ex
   The example headers are:
 ![dem_header](pics/dem_header.png)
 - **Geographic Data:**  
-  Shapefile for CBGs (e.g., `tl_2019_13_bg.shp`).
+  Shapefile for CBGs (e.g., `tl_2019_13_bg.shp`). The 2010-2019 Census Block Group geometries data is from free data provided by safegraph: https://www.safegraph.com/free-data/open-census-data. 
 
 ## Usage
 
